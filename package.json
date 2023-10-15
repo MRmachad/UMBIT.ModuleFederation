@@ -7,11 +7,19 @@
   "scripts": {
     "start": "concurrently \"wsrun --parallel start \""
   },
-  "workspaces":[
+  "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.23.2",
+    "babel-loader": "^8.1.0",
     "concurrently": "^8.2.0",
+    "webpack": "^4.44.2",
     "wsrun": "^5.2.4"
+  },
+  "optionalDependencies": {
+    "babel-loader": "8.1.0",
+    "webpack-dev-server": "3.11.1"
   }
 }
